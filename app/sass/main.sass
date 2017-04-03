@@ -1,5 +1,6 @@
 @import "part"
 @import "footer"
+@import "nav-menu"
 
 body
   color: red
@@ -29,9 +30,12 @@ header
 
 .header_logo
    margin: 0
+   background-color: inherit
 
 .header_logo img
    padding: 0
+
+
 
 .middle
   text-align: center
@@ -50,6 +54,13 @@ header
     font-family: "proxima-semibold",Verdana,Helvetica,sans-serif
 
 
+
+
+
+
+
+
+
 .middle_2
     display: block
     line-height: 26px
@@ -61,11 +72,26 @@ header
      justify-content: space-around
      margin: 20px
 
+@media screen and (max-width: 460px)
+  .middle_2-container
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+  .middle_2-left img
+    max-width: 150px
+    height: auto
+  .middle img
+    max-width: 150px
+    height: auto
 
 .middle_2-left
       color: bisque
       width: 40%
       text-align: center
+      display: flex
+      flex-direction: column
+      justify-content: center
 
 .bart_frase
        display: block
@@ -115,7 +141,6 @@ header
 .main_navigation
   padding: 0
   margin: 0
-  align-items: center
   display: flex
   justify-content: space-around
   border: 1px solid darkred
@@ -123,9 +148,15 @@ header
 li
   list-style-type: none
   margin: 15px
-
+  display: block
+  flex-basis: 100%
+  text-align: center
+  border: 1px solid darkred
   a
     text-decoration: none
     color: darkred
+    display: block
   a:active
     color: white
+
+

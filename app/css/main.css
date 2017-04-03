@@ -37,6 +37,15 @@ body {
 .tel, .adress {
   padding-left: 1em; }
 
+@media screen and (max-width: 460px) {
+  .main_navigation {
+    flex-direction: column;
+    background-color: brown;
+    align-items: flex-start; }
+  .navigation_item a {
+    color: lightgray;
+    font-weight: 900; } }
+
 body {
   color: red;
   background-color: red;
@@ -61,7 +70,8 @@ header {
   width: 100%; }
 
 .header_logo {
-  margin: 0; }
+  margin: 0;
+  background-color: inherit; }
 
 .header_logo img {
   padding: 0; }
@@ -92,10 +102,26 @@ header {
   justify-content: space-around;
   margin: 20px; }
 
+@media screen and (max-width: 460px) {
+  .middle_2-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .middle_2-left img {
+    max-width: 150px;
+    height: auto; }
+  .middle img {
+    max-width: 150px;
+    height: auto; } }
+
 .middle_2-left {
   color: bisque;
   width: 40%;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .bart_frase {
   display: block;
@@ -136,16 +162,20 @@ header {
 .main_navigation {
   padding: 0;
   margin: 0;
-  align-items: center;
   display: flex;
   justify-content: space-around;
   border: 1px solid darkred; }
 
 li {
   list-style-type: none;
-  margin: 15px; }
+  margin: 15px;
+  display: block;
+  flex-basis: 100%;
+  text-align: center;
+  border: 1px solid darkred; }
   li a {
     text-decoration: none;
-    color: darkred; }
+    color: darkred;
+    display: block; }
   li a:active {
     color: white; }

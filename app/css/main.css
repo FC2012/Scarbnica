@@ -94,7 +94,7 @@ body {
 .works-container {
   margin: 0;
   padding: 0;
-  background-color: darkgoldenrod; }
+  background-color: rgba(51, 1, 2, 0.8); }
 
 .works-row {
   display: flex;
@@ -103,10 +103,14 @@ body {
 
 .works-el {
   display: block;
-  border: 2px solid rgba(255, 255, 255, 0.9);
+  border: 5px solid rgba(255, 255, 100, 0.9);
   padding: 1em;
   margin: 1em;
-  background-color: darkred; }
+  background-color: #fff039;
+  border-radius: 60px 10px 60px 10px;
+  box-shadow: 10px 20px 30px rgba(252, 252, 252, 0.71); }
+  .works-el p {
+    text-align: center; }
 
 .header-works-nav {
   background-color: rgba(255, 255, 255, 0.7);

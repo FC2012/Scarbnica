@@ -68,18 +68,43 @@ body {
     color: rgba(255, 255, 255, 0.9);
     font-family: Purisa; }
 
-.hidden-menu {
-  margin-top: 91px;
+.header-navbar p {
   display: none; }
 
-.hidden-menu-el {
-  background-color: rgba(51, 1, 2, 0.8); }
-  .hidden-menu-el a {
+@media screen and (max-width: 600px) {
+  .header-nav-el {
+    display: none; }
+  .header-container-navbar {
+    background-color: #5b0001;
+    height: auto; }
+    .header-container-navbar p {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      font-size: larger;
+      border: 3px solid white;
+      width: 100%;
+      text-align: center;
+      font-weight: 700;
+      font-family: Purisa;
+      color: white; }
+  .header-container-navbar:hover .header-container-navbar {
+    background-color: rgba(91, 0, 1, 0.55); }
+    .header-container-navbar:hover .header-container-navbar p {
+      display: inline-block;
+      padding: 0;
+      margin: 0; }
+  .header-container-navbar:hover .header-navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(51, 1, 2, 0.9); }
+    .header-container-navbar:hover .header-navbar p {
+      display: none; }
+  .header-container-navbar:hover .header-nav-el {
     display: block;
-    font-size: 1em;
-    color: rgba(255, 255, 255, 0.9);
-    font-family: Purisa;
-    padding-left: 10px; }
+    width: inherit; }
+  .header-container-navbar:hover .header-na-el-color {
+    background-color: black; } }
 
 .middle3 {
   margin: 0;

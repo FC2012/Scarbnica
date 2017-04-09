@@ -2,7 +2,7 @@
 @import "footer"
 @import "nav-menu"
 @import "header-navbar"
-@import "hidden-menu"
+@import "header"
 @import "middle3"
 @import "works"
 
@@ -17,43 +17,6 @@ body
 
 a
    text-decoration: none
-
-
-header
-   display: flex
-   flex-direction: column
-
-.header
-   display: flex
-   flex-direction: row
-   justify-content: space-between
-   align-items: stretch
-   position: fixed
-   height: 91px
-   background-color: rgba(1,2,3,0.8)
-   width: 100%
-
-//.header-left-part
-// display: flex
-//  flex-direction: row
-//  justify-content: space-between
-
-
-.header_logo
-   margin: 0
-   background-color: inherit
-   padding-left: 2em
-
-//.header_logo img
-//   padding: 0
-
-.header_info_company_name
-    padding: 5px
-    margin-left: 2em
-    font-weight: 900
-    font-family: Purisa
-    a
-      color: rgba(255,255,255,0.9)
 
 .middle
   text-align: center
@@ -87,13 +50,6 @@ header
        color: red
        font-family: cursive
 
-
-
-
-
-
-
-
 .middle_2
     display: block
     line-height: 26px
@@ -104,26 +60,6 @@ header
      flex-direction: row
      justify-content: space-around
      margin: 20px
-
-@media screen and (max-width: 854px)
-  .header
-    flex-direction: column
-
-  .header-navbar
-    justify-content: space-around
-
-  .header-nav-el
-     margin-right: 0
-     margin-top: 0.5em
-
-
-@media screen and (max-width: 504px)
-   .header-container-navbar
-      display: none
-
-   .hidden-menu
-      display: flex
-      flex-direction: column
 
 @media screen and (max-width: 460px)
   .middle_2-container
@@ -172,45 +108,5 @@ header
 
 
 
-
-.header_info_company_name
-  color: rgba(123,123,123,0.9)
-  font-size: 1em
-
-.main_frase
-  display: flex
-  color: darkred
-  border-bottom: 20px solid rgba(51,1,2,0.8)
-  margin-top: 121px
-  flex-direction: row
-  justify-content: center
-  text-align: center
-  h1
-    font-weight: 900
-    font-family: Purisa
-    color: rgba(255,255,255,1)
-
-
-
-.main_navigation
-  padding: 0
-  margin: 0
-  display: flex
-  justify-content: space-around
-  border: 1px solid darkred
-
-li
-  list-style-type: none
-  margin: 15px
-  display: block
-  flex-basis: 100%
-  text-align: center
-  border: 1px solid darkred
-  a
-    text-decoration: none
-    color: darkred
-    display: block
-  a:active
-    color: white
 
 

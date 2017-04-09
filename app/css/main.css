@@ -37,15 +37,6 @@ body {
 .tel, .adress {
   padding-left: 1em; }
 
-@media screen and (max-width: 460px) {
-  .main_navigation {
-    flex-direction: column;
-    background-color: brown;
-    align-items: flex-start; }
-  .navigation_item a {
-    color: lightgray;
-    font-weight: 900; } }
-
 .header-container-navbar {
   display: block;
   height: 100%; }
@@ -71,6 +62,48 @@ body {
 .header-navbar p {
   display: none; }
 
+header {
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  position: fixed;
+  height: 91px;
+  background-color: rgba(1, 2, 3, 0.8);
+  width: 100%; }
+
+.header_logo {
+  margin: 0;
+  background-color: inherit;
+  padding-left: 2em; }
+
+.header_info_company_name {
+  padding: 5px;
+  margin-left: 2em;
+  font-weight: 900;
+  font-family: Purisa;
+  color: rgba(123, 123, 123, 0.9);
+  font-size: 1em; }
+  .header_info_company_name a {
+    color: rgba(255, 255, 255, 0.9); }
+
+.main_frase {
+  display: flex;
+  color: darkred;
+  border-bottom: 20px solid rgba(51, 1, 2, 0.8);
+  margin-top: 121px;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center; }
+  .main_frase h1 {
+    font-weight: 900;
+    font-family: Purisa;
+    color: white; }
+
 @media screen and (max-width: 600px) {
   .header-nav-el {
     display: none; }
@@ -86,8 +119,12 @@ body {
       width: 100%;
       text-align: center;
       font-weight: 700;
-      font-family: Purisa;
+      font-family: Purisa, "Times New Roman";
       color: white; }
+  .header_info_company_name {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0; }
   .header-container-navbar:hover .header-container-navbar {
     background-color: rgba(91, 0, 1, 0.55); }
     .header-container-navbar:hover .header-container-navbar p {
@@ -105,6 +142,15 @@ body {
     width: inherit; }
   .header-container-navbar:hover .header-na-el-color {
     background-color: black; } }
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column; }
+  .header-navbar {
+    justify-content: space-around; }
+  .header-nav-el {
+    margin-right: 0;
+    margin-top: 0.5em; } }
 
 .middle3 {
   margin: 0;
@@ -153,33 +199,6 @@ body {
 a {
   text-decoration: none; }
 
-header {
-  display: flex;
-  flex-direction: column; }
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  position: fixed;
-  height: 91px;
-  background-color: rgba(1, 2, 3, 0.8);
-  width: 100%; }
-
-.header_logo {
-  margin: 0;
-  background-color: inherit;
-  padding-left: 2em; }
-
-.header_info_company_name {
-  padding: 5px;
-  margin-left: 2em;
-  font-weight: 900;
-  font-family: Purisa; }
-  .header_info_company_name a {
-    color: rgba(255, 255, 255, 0.9); }
-
 .middle {
   text-align: center;
   background-color: darkred;
@@ -220,22 +239,6 @@ header {
   flex-direction: row;
   justify-content: space-around;
   margin: 20px; }
-
-@media screen and (max-width: 854px) {
-  .header {
-    flex-direction: column; }
-  .header-navbar {
-    justify-content: space-around; }
-  .header-nav-el {
-    margin-right: 0;
-    margin-top: 0.5em; } }
-
-@media screen and (max-width: 504px) {
-  .header-container-navbar {
-    display: none; }
-  .hidden-menu {
-    display: flex;
-    flex-direction: column; } }
 
 @media screen and (max-width: 460px) {
   .middle_2-container {
@@ -279,41 +282,3 @@ header {
 .bart_frase_2 {
   margin-top: 50px;
   font-weight: bold; }
-
-.header_info_company_name {
-  color: rgba(123, 123, 123, 0.9);
-  font-size: 1em; }
-
-.main_frase {
-  display: flex;
-  color: darkred;
-  border-bottom: 20px solid rgba(51, 1, 2, 0.8);
-  margin-top: 121px;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center; }
-  .main_frase h1 {
-    font-weight: 900;
-    font-family: Purisa;
-    color: white; }
-
-.main_navigation {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid darkred; }
-
-li {
-  list-style-type: none;
-  margin: 15px;
-  display: block;
-  flex-basis: 100%;
-  text-align: center;
-  border: 1px solid darkred; }
-  li a {
-    text-decoration: none;
-    color: darkred;
-    display: block; }
-  li a:active {
-    color: white; }

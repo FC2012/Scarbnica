@@ -1,2 +1,0 @@
-# StranaMasterov
-Web

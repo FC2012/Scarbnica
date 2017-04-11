@@ -7,14 +7,15 @@
 .works-row
    display: flex
    flex-direction: row
-   justify-content: space-around
+   justify-content: center
+   align-content: center
 
 
 .works-el
    display: block
    border: 5px solid rgba(255,255,100,0.9)
    padding: 1em
-   margin: 1em
+   margin: 0
    opacity: 0.8
 
 .header-works-nav
@@ -24,3 +25,22 @@
    border-bottom:  4px solid rgba(51,1,2,0.8)
    a
      color: darkred
+
+@media screen and (max-width: 600px)
+
+   #works-buttonLeft, #works-buttonRight
+      display: block
+      width: 5%
+      margin: 45% 0
+      height: 10%
+
+   .sl
+       width: auto
+       height: 250px
+
+
+
+   .homerdiv
+      width: 100%
+      height: auto
+      display: block

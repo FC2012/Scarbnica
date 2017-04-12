@@ -1,3 +1,5 @@
+@import "styles-main"
+
 .bottom
   margin: 0
   height: auto
@@ -16,7 +18,7 @@
   display: flex
   flex-direction: row
   justify-content: space-between
-  color: aliceblue
+  color: $font-color-main
   font-size: larger
   margin-left: 1em
   margin-right: 1em
@@ -25,7 +27,7 @@
   display: flex
   flex-direction: column
   justify-content: flex-start
-  color: aliceblue
+  color: $font-color-main
   font-size: large
   margin-top: 1em
 
@@ -34,3 +36,40 @@
 
 .tel, .adress
   padding-left: 1em
+
+
+// Footer Slider
+
+
+#slider-container
+  position: relative
+  height: 150px
+  padding: 0 0 0 100px
+  margin: 0
+  list-style-type: none
+  font-family: $font-family-main
+
+
+.slider-element
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  opacity: 0
+  z-index: 1
+  transition: opacity 10s
+
+.active
+  opacity: 1
+  z-index: 2
+
+
+
+.slider-element
+  font-size: 50px
+  padding: 40px
+  font-weight: 900
+  box-sizing: border-box
+  background: dimgrey
+  color: $font-color-main

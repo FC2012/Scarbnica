@@ -1,43 +1,68 @@
 @import "styles-main"
 
+.footer_container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.footer-left, .footer-right
+    display: flex
+    flex-direction: column
+    align-content: center
+    justify-content: flex-start
+
+.footer-right
+    margin-right: 5em
+    text-align: left
+    border-left: 1px solid $font-color-main
+
+.links-menu-main
+   display: flex
+   flex-direction: row
+   justify-content: flex-start
+   font-size: larger
+   margin-left: 1em
+   a
+     display: block
+     font-family: $font-family-main
+     margin: 1em
+     border: 3px solid $font-color-main
+     border-radius: 15px
+     padding: 15px
+     color: $font-color-main
+
+.icons
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    margin-left: 1em
+    img
+       margin: 1em
+
+
+
+
 .bottom
   margin: 0
   height: auto
   background-color: dimgrey
 
-.icons
 
-  display: flex
-  flex-direction: row
-  justify-content: space-around
-
-
-
-.icons img
-  margin: 1.1em
-
-.main
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-  color: $font-color-main
-  font-size: larger
-  margin-left: 1em
-  margin-right: 1em
 
 .contacts
   display: flex
   flex-direction: column
   justify-content: flex-start
   color: $font-color-main
-  font-size: large
-  margin-top: 1em
+  font-size: 1em
+  margin-left: 2em
+  align-items: flex-start
+  font-family: $font-family-main
 
 .adress_written, .number_1, .number_2
-  text-align: center
-
-.tel, .adress
   padding-left: 1em
+
 
 
 // Footer Slider

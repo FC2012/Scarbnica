@@ -18,10 +18,11 @@ obj.style.background = "rgba(51,1,2,0.8)";*/
 
 var slides = document.querySelectorAll('#slider-container .slider-element');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,3000);
+var slideInterval = setInterval(nextSlide,2500);
 
 function nextSlide() {
     slides[currentSlide].className = 'slider-element';
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slider-element active';
 }
+

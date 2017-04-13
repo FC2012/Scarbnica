@@ -9,6 +9,36 @@ function mOut(obj) {
 }
 
 
+
+function mOver1(obj1) {
+
+    obj1.firstElementChild.style = "color:red; background:white";
+}
+
+function mOut1(obj1) {
+    obj1.firstElementChild.style = "color:white; background:dimgrey";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*obj.style.background = "rgba(255,255,255,0.9)";
 obj.style.color = "darkred";
 obj.style.background = "rgba(51,1,2,0.8)";*/

@@ -101,7 +101,6 @@ body {
   display: block;
   margin-top: 1.5em;
   margin-right: 2em;
-  padding: 5px 15px;
   border-left: 6px solid rgba(255, 255, 255, 0.9);
   border-right: 6px solid rgba(255, 255, 255, 0.9);
   border-bottom: 4px solid rgba(255, 255, 255, 0.9);
@@ -109,7 +108,9 @@ body {
   .header-nav-el a {
     font-size: 1em;
     color: rgba(255, 255, 255, 0.9);
-    font-family: Purisa; }
+    font-family: Purisa;
+    display: block;
+    padding: 5px 15px; }
 
 .header-navbar p {
   display: none; }
@@ -228,6 +229,7 @@ header {
 .works-el {
   display: block;
   border: 5px solid rgba(255, 255, 100, 0.9);
+  background-color: rgba(51, 1, 2, 0.9);
   padding: 1em;
   margin: 1em;
   opacity: 0.8; }
@@ -335,3 +337,21 @@ a {
 .bart_frase_2 {
   margin-top: 50px;
   font-weight: bold; }
+
+.middle-H {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(51, 1, 2, 0.8);
+  height: 150px; }
+
+.middle-H h3 {
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+  font-family: Purisa; }
+
+.work-CONTAINER-row {
+  position: relative; }
